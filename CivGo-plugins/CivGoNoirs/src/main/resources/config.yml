@@ -1,0 +1,38 @@
+# CivGo Noirs
+world: world
+
+# Position du Cratère (centre du danger maximal)
+crater:
+  x: 0
+  z: 0
+
+# Rayon (en blocs) au-delà duquel le danger tombe à son minimum
+danger-radius: 1500
+# Danger minimal partout dans le monde (0.0 à 1.0)
+min-danger: 0.15
+
+auto:
+  enabled: true
+  min-interval-minutes: 40
+  max-interval-minutes: 120
+
+duration:
+  min-minutes: 4
+  max-minutes: 10
+
+storm: true            # orage pendant les Noirs (ciel plus sombre)
+darkness-effect: true  # effet Obscurité pour les joueurs
+mob-buffs: true        # mobs plus agressifs (vitesse, force...)
+
+extra-spawns:
+  enabled: true
+  max-per-player: 6
+  interval-seconds: 10
+
+messages:
+  title: "&5&lLES NOIRS"
+  subtitle: "&7Le ciel s'éteint..."
+  start: "&5Les Noirs s'abattent sur le monde. Restez groupés."
+  end: "&7Le ciel s'éclaircit. Les Noirs se retirent."
+  bossbar: "&5Les Noirs"
+  no-permission: "&cTu n'as pas la permission."
